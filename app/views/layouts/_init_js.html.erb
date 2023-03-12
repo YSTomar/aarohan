@@ -1,0 +1,51 @@
+<script type="text/javascript">
+    var bodyCacheable = true;
+    
+    var exclusionReason = {"shouldRender":true,"forced":false};
+    var ssrInfo = {"renderBodyTime":1798,"renderTimeStamp":1654325860448}
+</script>
+
+
+
+
+<script>window.clientSideRender = false;</script>
+
+
+    <!--pageHtmlEmbeds.bodyStart start-->
+    <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart start"></script>
+    
+    <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart end"></script>
+    <!--pageHtmlEmbeds.bodyStart end-->
+
+
+
+
+<script id="wix-first-paint">
+    if (window.ResizeObserver &&
+        (!window.PerformanceObserver || !PerformanceObserver.supportedEntryTypes || PerformanceObserver.supportedEntryTypes.indexOf('paint') === -1)) {
+        new ResizeObserver(function (entries, observer) {
+            entries.some(function (entry) {
+                var contentRect = entry.contentRect;
+                if (contentRect.width > 0 && contentRect.height > 0) {
+                    requestAnimationFrame(function (now) {
+                        window.wixFirstPaint = now;
+                        dispatchEvent(new CustomEvent('wixFirstPaint'));
+                    });
+                    observer.disconnect();
+                    return true;
+                }
+            });
+        }).observe(document.body);
+    }
+</script>
+
+<pages-css id="pages-css"><style id="css_masterPage">
+
+	
+
+
+</style>
+<style id="css_c1dmp">
+	
+
+</style></pages-css>
